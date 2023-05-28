@@ -1,5 +1,5 @@
 # Travelopia-frontEnd
-
+  I have kept the design of the project as simple with elegant as possible withing the time constraint.
 This is an angular Project.
 
 Steps to run :
