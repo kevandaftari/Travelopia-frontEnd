@@ -9,7 +9,8 @@ Steps to run :
 3) Install angular CLI IF not already installed.(https://angular.io/cli)
 4) Open the Downloaded project.
 5) Go to the Travelopia-Assignment path in powershell.
-6) run ng serve.
+6) Run npm i --force.
+7) run ng serve.
 
 Adding of Travel Survey Form looks like :
 ![image](https://github.com/kevandaftari/Travelopia-frontEnd/assets/35450646/0b1afcfa-c464-4bb0-9181-b33d47d6db7a)
