@@ -1,0 +1,73 @@
+
+<mat-card fxLayout = "column" fxLayoutAlign="center center">
+  <H1>Fill up The Travel Survey Form</H1>
+
+  <form [formGroup]="addTravelSurveyDetailsForm">
+
+    <mat-form-field class="marginClass" appearance="outline">
+      <mat-label>Full Name</mat-label>
+      <input 
+      type="text"
+      formControlName="fullName"
+      matInput
+      required
+      noWhitespace
+      />
+    </mat-form-field>
+    <br />
+
+    <mat-form-field class="marginClass" appearance="outline">
+      <mat-label>Email Address</mat-label>
+      <input 
+      type="text"
+      formControlName="emailAddress"
+      matInput
+      required
+      noWhitespace
+      />
+    </mat-form-field>
+    <br />
+
+    <label>Where do you want to go?</label>
+    <select class="marginClass" appearance="outline" formControlName="travelPlace" class="form-control" id="" required>
+      <option value="India">India</option>
+      <option value="Africa">Africa</option>
+        <option value="Europe">Europe</option>
+    </select>
+    <br />
+    
+    <mat-form-field class="marginClass" appearance="outline">
+      <mat-label>Number of Travellers</mat-label>
+      <input 
+      type="number"
+      formControlName="numberOfTravelers"
+      matInput
+      required
+      noWhitespace
+      />
+    </mat-form-field>
+    <br />
+
+    <mat-form-field class="marginClass" appearance="outline">
+      <mat-label>Budget Per Person($)</mat-label>
+      <input 
+      type="number"
+      formControlName="budgetPerPersonInDollar"
+      matInput
+      required
+      noWhitespace
+      />
+    </mat-form-field>
+    <br/>
+  </form>
+  
+  <button fxLayoutAlign = "center center" 
+  [disabled]="!addTravelSurveyDetailsForm.valid" 
+  mat-raised-button
+  (click) = "AddTravelSurveyDetails()"
+  type="submit">
+    Submit
+  </button>
+
+</mat-card>
+
